@@ -21,6 +21,12 @@ namespace Kalender
 
             termin.Add(zwei);
 
+            foreach (var item in termin)
+            {
+                Console.WriteLine($"Termin: {item.Date},    {item.Title}");
+            }
+           
+
         }
     }
 }
