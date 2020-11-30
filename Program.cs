@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kalender
 {
@@ -6,7 +7,20 @@ namespace Kalender
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Eingabe> termin = new List<Eingabe>();
+
+            Eingabe eins = new Eingabe();
+            eins.Date = "14. Oktober 2020";
+            eins.Title = "Hausübung machen";
+
+            termin.Add(eins);
+
+            Eingabe zwei = new Eingabe();
+            zwei.Date = "30. November 2020";
+            zwei.Title = "Treffen in Zell am See";
+
+            termin.Add(zwei);
+
         }
     }
 }
